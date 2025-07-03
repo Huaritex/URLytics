@@ -143,6 +143,9 @@ try:
         'having_Sub_Domain '
     ]
 
+    # Manejo de valores nulos antes de seleccionar features
+    df_total = df_total.fillna(0)  # O usa df_total.dropna() si prefieres eliminar filas
+
     # Filtra el DataFrame solo con los features seleccionados
     X = df_total[FEATURES]
     y = df_total['target']
