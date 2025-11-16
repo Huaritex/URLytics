@@ -1,4 +1,4 @@
-# ✅ Checklist de Validación ML - SocialGuard
+# ✅ Checklist de Validación ML - URLytics
 
 ## 📋 Checklist Pre-Entrenamiento
 
@@ -364,7 +364,7 @@
 
 **Versión**: 2.0  
 **Fecha**: 2025-11-15  
-**Autor**: SocialGuard ML Team
+**Autor**: URLytics ML Team
 
 ---
 

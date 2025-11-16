@@ -1,4 +1,4 @@
-# 📋 Orden de Ejecución del Notebook - SocialGuard Training
+# 📋 Orden de Ejecución del Notebook - URLytics Training
 
 ## 🎯 **Guía de Ejecución Correcta**
 
@@ -342,8 +342,8 @@ print(hasattr(model, 'feature_importances_'))  # Debe ser True
 ## 📚 **Referencias**
 
 - **Notebook:** `train.ipynb`
-- **Proyecto:** SocialGuard - Phishing Detection
-- **Autor:** SocialGuard Team
+- **Proyecto:** URLytics - Phishing Detection
+- **Autor:** URLytics Team
 - **Versión:** 2.0
 - **Fecha:** Noviembre 2025
 

@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)
 
 # =====================================================
-# 🛡️ SocialGuard API - Phishing Detection
+# 🛡️ URLytics API - Phishing Detection
 # =====================================================
 # Versión 2.0 - Modelo mejorado con normalización
 # =====================================================

@@ -1,4 +1,4 @@
-# 📚 Índice de Documentación - SocialGuard ML v2.0
+# 📚 Índice de Documentación - URLytics ML v2.0
 
 ## 🎯 Por Dónde Empezar
 
@@ -370,7 +370,7 @@
 
 ## 📞 Contacto y Contribuciones
 
-**Equipo:** SocialGuard ML Team  
+**Equipo:** URLytics ML Team  
 **Versión de docs:** 2.0  
 **Última actualización:** 2025-11-15
 
@@ -397,6 +397,6 @@ Pull requests son bienvenidos! Sigue el mismo estilo de documentación.
 
 ---
 
-**¡Gracias por usar SocialGuard! 🛡️**
+**¡Gracias por usar URLytics! 🛡️**
 
 Para empezar, ve a: **[INICIO_RAPIDO.md](INICIO_RAPIDO.md)** 🚀

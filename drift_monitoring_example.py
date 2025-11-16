@@ -1,11 +1,11 @@
 """
-🛡️ SocialGuard - Drift Monitoring Example
+🛡️ URLytics - Drift Monitoring Example
 ===========================================
 
 Este script proporciona funciones helper para detectar drift en producción.
 Usar este código en tu API/aplicación para monitorear la salud del modelo.
 
-Autor: SocialGuard ML Team
+Autor: URLytics ML Team
 Versión: 2.0
 Fecha: 2025-11-15
 """
@@ -305,7 +305,7 @@ def generate_drift_report(drift_results, performance_results=None, output_file='
 # =====================================================
 
 if __name__ == '__main__':
-    print("🔍 SocialGuard Drift Monitoring - Ejemplo de Uso\n")
+    print("🔍 URLytics Drift Monitoring - Ejemplo de Uso\n")
     print("="*70)
     
     # Simular datos de producción (reemplazar con datos reales)

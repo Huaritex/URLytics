@@ -1,5 +1,5 @@
 # =====================================================
-# SocialGuard ML v2.0 - Requirements
+# URLytics ML v2.0 - Requirements
 # =====================================================
 # Librerías necesarias para el proyecto completo
 # =====================================================

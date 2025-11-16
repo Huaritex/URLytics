@@ -1,6 +1,6 @@
 #!/bin/bash
 # =====================================================
-# 🛡️ SocialGuard - Script para Detener el Proyecto
+# 🛡️ URLytics - Script para Detener el Proyecto
 # =====================================================
 
 # Colores
@@ -14,7 +14,7 @@ echo -e "${BLUE}"
 cat << 'EOF'
 ╔══════════════════════════════════════════════════════════════════════╗
 ║                                                                      ║
-║           🛑 DETENIENDO PROYECTO SOCIALGUARD                        ║
+║           🛑 DETENIENDO PROYECTO URLYTICS                        ║
 ║                                                                      ║
 ╚══════════════════════════════════════════════════════════════════════╝
 EOF
@@ -80,7 +80,7 @@ else
     echo -e "${GREEN}✅ API completamente detenida${NC}\n"
 fi
 
-echo -e "${GREEN}🎉 Proyecto SocialGuard detenido correctamente${NC}\n"
+echo -e "${GREEN}🎉 Proyecto URLytics detenido correctamente${NC}\n"
 
 # =====================================================
 # Información adicional

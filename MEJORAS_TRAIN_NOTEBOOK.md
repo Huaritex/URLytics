@@ -2,7 +2,7 @@
 
 ## 🎯 Resumen Ejecutivo
 
-Se ha mejorado significativamente el notebook `train.ipynb` incorporando las mejores prácticas del pipeline de entrenamiento de `main.ipynb`, adaptadas específicamente para el proyecto **SocialGuard** de detección de phishing.
+Se ha mejorado significativamente el notebook `train.ipynb` incorporando las mejores prácticas del pipeline de entrenamiento de `main.ipynb`, adaptadas específicamente para el proyecto **URLytics** de detección de phishing.
 
 ---
 
@@ -233,7 +233,7 @@ phishing_model_artefacts/
 
 ---
 
-## 🔗 Integración con SocialGuard
+## 🔗 Integración con URLytics
 
 ### Pasos para usar el modelo mejorado:
 
@@ -274,7 +274,7 @@ El nuevo `train.ipynb` incorpora **todas las mejores prácticas** de `main.ipynb
 ✅ **Exportación profesional** (mejorado sobre main.ipynb)  
 ✅ **Documentación detallada** (mejorado sobre main.ipynb)  
 
-Pero **mantiene el enfoque en phishing** específico para SocialGuard.
+Pero **mantiene el enfoque en phishing** específico para URLytics.
 
 ---
 

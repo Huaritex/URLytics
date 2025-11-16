@@ -1,4 +1,4 @@
-# 📊 Resumen de Mejoras ML - SocialGuard v2.0
+# 📊 Resumen de Mejoras ML - URLytics v2.0
 
 ## 🎯 Mejoras Implementadas
 
@@ -365,4 +365,4 @@ if drift_info['drift_detected']:
 
 **Versión**: 2.0  
 **Fecha**: 2025-11-15  
-**Autor**: SocialGuard ML Team
+**Autor**: URLytics ML Team

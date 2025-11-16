@@ -1,4 +1,4 @@
-# 🚀 Guía Rápida de Inicio - SocialGuard ML v2.0
+# 🚀 Guía Rápida de Inicio - URLytics ML v2.0
 
 ## ⚡ Inicio Rápido en 5 Pasos
 
@@ -395,7 +395,7 @@ scaler = joblib.load('scaler.joblib')
 ---
 
 **Versión:** 2.0  
-**Autor:** SocialGuard ML Team  
+**Autor:** URLytics ML Team  
 **Última actualización:** 2025-11-15
 
 **¿Preguntas?** Consultar documentos listados arriba o abrir issue en GitHub.

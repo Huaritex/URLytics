@@ -1,8 +1,8 @@
-# 🛡️ SocialGuard - Guía de Integración de API
+# 🛡️ URLytics - Guía de Integración de API
 
 ## ✅ Integración Completada
 
-El modelo de phishing entrenado ha sido **integrado exitosamente** en la API de SocialGuard.
+El modelo de phishing entrenado ha sido **integrado exitosamente** en la API de URLytics.
 
 ---
 
@@ -356,6 +356,6 @@ sleep 3 && python test_api.py
 
 **🎉 ¡Integración completada exitosamente!**
 
-Autor: SocialGuard Team  
+Autor: URLytics Team  
 Fecha: 2025-11-15  
 Versión: 2.0

@@ -139,10 +139,10 @@ El notebook `train.ipynb` ejecutará automáticamente:
 Agrega esto a tu `~/.zshrc`:
 
 ```bash
-# Alias para SocialGuard
-alias socialguard='cd "/home/huaritex/Desktop/social engineer" && source venv/bin/activate'
-alias sg-train='socialguard && jupyter notebook train.ipynb'
-alias sg-verify='socialguard && python verify_installation.py'
+# Alias para URLytics
+alias urlytics='cd "/home/huaritex/Desktop/social engineer" && source venv/bin/activate'
+alias sg-train='urlytics && jupyter notebook train.ipynb'
+alias sg-verify='urlytics && python verify_installation.py'
 ```
 
 Luego recarga la configuración:
@@ -152,7 +152,7 @@ source ~/.zshrc
 
 Ahora puedes usar:
 ```bash
-socialguard      # Activar entorno
+urlytics      # Activar entorno
 sg-train         # Abrir notebook
 sg-verify        # Verificar instalación
 ```
@@ -183,7 +183,7 @@ pip install -r requirements.txt
 
 ```bash
 source venv/bin/activate
-python -m ipykernel install --user --name=socialguard --display-name "SocialGuard ML"
+python -m ipykernel install --user --name=urlytics --display-name "URLytics ML"
 ```
 
 ### Problema: Error de importación en notebook

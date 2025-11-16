@@ -1,10 +1,10 @@
 
 ---
 
-# 🛡️ SocialGuard
+# 🛡️ URLytics
 
 **Detección Inteligente de Ingeniería Social en Tiempo Real**
-SocialGuard es una extensión de navegador potenciada por inteligencia artificial que analiza mensajes en tiempo real (en plataformas como Gmail o WhatsApp Web) para detectar patrones comunes de **ingeniería social**, como **phishing**, **manipulación emocional** o **solicitudes sospechosas**.
+URLytics es una extensión de navegador potenciada por inteligencia artificial que analiza mensajes en tiempo real (en plataformas como Gmail o WhatsApp Web) para detectar patrones comunes de **ingeniería social**, como **phishing**, **manipulación emocional** o **solicitudes sospechosas**.
 
 > 🧠 Todo el procesamiento ocurre **localmente** en el navegador, garantizando **confidencialidad, integridad y disponibilidad (CID)**.
 
@@ -153,7 +153,7 @@ tu-proyecto/
 
 ## 💡 Uso del Prototipo
 
-1. **Activa SoCialGuard** con el interruptor superior.
+1. **Activa URLytics** con el interruptor superior.
 2. **Escribe o pega texto** en el área de análisis.
 3. **Haz clic en "Analizar Texto"**.
 4. Visualiza el **nivel de riesgo** y resultados IA.
@@ -178,7 +178,7 @@ tu-proyecto/
 
 * **Confidencialidad**: El análisis ocurre localmente; no se recolectan datos.
 * **Integridad**: No se modifica el contenido del mensaje.
-* **Disponibilidad**: SoCialGuard no interfiere con el uso del navegador.
+* **Disponibilidad**: URLytics no interfiere con el uso del navegador.
 
 ---
 

@@ -6,7 +6,7 @@
 # Uso: source activate_env.sh
 # =====================================================
 
-echo "🚀 Activando entorno virtual de SocialGuard..."
+echo "🚀 Activando entorno virtual de URLytics..."
 
 # Detectar el directorio del script
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"

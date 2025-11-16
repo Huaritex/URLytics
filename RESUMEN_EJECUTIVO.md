@@ -1,8 +1,8 @@
-# 🎯 Resumen Ejecutivo - Mejoras ML SocialGuard v2.0
+# 🎯 Resumen Ejecutivo - Mejoras ML URLytics v2.0
 
 ## 📋 Resumen
 
-Se han implementado **4 mejoras críticas** en el pipeline de Machine Learning del proyecto SocialGuard para prevenir problemas comunes que causan el **80% de los fallos de modelos en producción**.
+Se han implementado **4 mejoras críticas** en el pipeline de Machine Learning del proyecto URLytics para prevenir problemas comunes que causan el **80% de los fallos de modelos en producción**.
 
 ---
 
@@ -168,7 +168,7 @@ El notebook ahora ejecuta **automáticamente** las siguientes validaciones:
 ## 🚀 Próximos Pasos
 
 ### Desarrollo:
-- [ ] Integrar modelo en API de SocialGuard
+- [ ] Integrar modelo en API de URLytics
 - [ ] Convertir a TensorFlow.js para navegador
 - [ ] Implementar SHAP values para interpretabilidad
 
@@ -256,7 +256,7 @@ El proyecto ahora cumple con:
 
 ## 📞 Contacto
 
-**Equipo**: SocialGuard ML Team  
+**Equipo**: URLytics ML Team  
 **Versión**: 2.0  
 **Fecha**: 2025-11-15  
 

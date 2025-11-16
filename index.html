@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoCialGuard - Prototipo</title>
+    <title>URLytics - Prototipo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
@@ -90,7 +90,7 @@
                 <svg class="w-10 h-10 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                 </svg>
-                <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100">SoCialGuard</h1>
+                <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100">URLytics</h1>
             </div>
             <div class="flex items-center space-x-4">
                 <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
@@ -131,7 +131,7 @@
 
         <!-- Pie de página -->
         <div class="mt-8 pt-4 border-t border-gray-200 dark:border-gray-700 text-xs text-gray-500 dark:text-gray-500 text-center">
-            <p>SoCialGuard v2.3 </p>
+            <p>URLytics v2.3 </p>
             <p>Este es un prototipo por lo cual puede tener errores </p>
             <p>By Huaritex</p>
         </div>
@@ -188,7 +188,7 @@
 
             analyzeButton.addEventListener('click', () => {
                 if (!extensionToggle.checked) {
-                    displayTemporaryAlert('SoCialGuard está desactivado. Actívalo para analizar mensajes.', 'info');
+                    displayTemporaryAlert('URLytics está desactivado. Actívalo para analizar mensajes.', 'info');
                     analysisResultCard.classList.add('hidden');
                     return;
                 }
@@ -223,10 +223,10 @@
 
             function updateStatus() {
                 if (extensionToggle.checked) {
-                    statusMessage.textContent = 'SoCialGuard está activo y protegiéndote.';
+                    statusMessage.textContent = 'URLytics está activo y protegiéndote.';
                     statusMessage.className = 'mb-6 p-3 rounded-lg text-center text-sm font-medium bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300';
                 } else {
-                    statusMessage.textContent = 'SoCialGuard está desactivado.';
+                    statusMessage.textContent = 'URLytics está desactivado.';
                     statusMessage.className = 'mb-6 p-3 rounded-lg text-center text-sm font-medium bg-yellow-100 dark:bg-yellow-900/50 text-yellow-700 dark:text-yellow-300';
                 }
             }

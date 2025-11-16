@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-🧪 Script de prueba para la API de SocialGuard
+🧪 Script de prueba para la API de URLytics
 ================================================
 Prueba el modelo de detección de phishing con varios ejemplos.
 """
@@ -85,7 +85,7 @@ def main():
     """Ejecuta todas las pruebas"""
     print(f"\n{Fore.CYAN}{Style.BRIGHT}")
     print(f"{'='*70}")
-    print(f"🛡️  SOCIALGUARD - PRUEBAS DE API DE DETECCIÓN DE PHISHING")
+    print(f"🛡️  URLYTICS - PRUEBAS DE API DE DETECCIÓN DE PHISHING")
     print(f"{'='*70}")
     print(f"{Style.RESET_ALL}")
     

@@ -451,6 +451,6 @@ Implementar estas validaciones **antes** de deployar puede ahorrar:
 
 ---
 
-**Autor**: SocialGuard ML Team  
+**Autor**: URLytics ML Team  
 **Última actualización**: 2025-11-15  
 **Versión**: 1.0

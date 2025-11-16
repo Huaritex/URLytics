@@ -1,4 +1,4 @@
-# 📦 Guía de Instalación - SocialGuard ML v2.0
+# 📦 Guía de Instalación - URLytics ML v2.0
 
 ## ✅ Instalación Completada
 
@@ -265,12 +265,12 @@ Ahora que tienes todo instalado, puedes:
 Agrega esto a tu `~/.zshrc` o `~/.bashrc`:
 
 ```bash
-alias socialguard='cd "/home/huaritex/Desktop/social engineer" && source venv/bin/activate'
+alias urlytics='cd "/home/huaritex/Desktop/social engineer" && source venv/bin/activate'
 ```
 
 Luego solo ejecuta:
 ```bash
-socialguard
+urlytics
 ```
 
 ### Verificar qué Python está usando
