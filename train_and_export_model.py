@@ -57,7 +57,6 @@ try:
         exit()
     df_orig = df_orig.rename(columns={target_col_orig: 'target'})
     print(f"Dataset original: {df_orig.shape[0]} filas, {df_orig.shape[1]} columnas")
-    # --- Dataset local: buscar cualquier archivo que empiece por RT_IOT y termine en .csv en subcarpetas ---
     local_files = []
     for root, dirs, files in os.walk('.'):
         for f in files:
@@ -76,7 +75,6 @@ try:
                 target_col_local = 'target'
             elif 'Attack_type' in df_local_tmp.columns:
                 target_col_local = 'Attack_type'
-                # Convertir Attack_type a binario: 0 para Normal, 1 para otro
                 df_local_tmp['target'] = (df_local_tmp['Attack_type'] != 'Normal').astype(int)
                 df_local_tmp = df_local_tmp.drop(columns=['Attack_type'])
             else:
@@ -93,7 +91,6 @@ try:
     else:
         print("No se encontró ningún archivo local RT_IOT*.csv en la carpeta ni subcarpetas. Solo se usarán los datasets de Kaggle.")
         df_local = None
-    # --- Dataset local: agregar archivo específico 'RT_IOT2022.csv' si existe ---
     specific_file = 'RT_IOT2022.csv'
     if os.path.exists(specific_file):
         print(f"Cargando archivo local específico: {specific_file}")
@@ -202,3 +199,4 @@ try:
             print(f"{fname} NO existe")
 except Exception as e:
     print(f"Error general en el procesamiento: {e}")
+    

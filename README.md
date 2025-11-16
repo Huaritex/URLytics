@@ -1,10 +1,10 @@
 
 ---
 
-# 🛡️ SoCialGuard
+# 🛡️ SocialGuard
 
 **Detección Inteligente de Ingeniería Social en Tiempo Real**
-SoCialGuard es una extensión de navegador potenciada por inteligencia artificial que analiza mensajes en tiempo real (en plataformas como Gmail o WhatsApp Web) para detectar patrones comunes de **ingeniería social**, como **phishing**, **manipulación emocional** o **solicitudes sospechosas**.
+SocialGuard es una extensión de navegador potenciada por inteligencia artificial que analiza mensajes en tiempo real (en plataformas como Gmail o WhatsApp Web) para detectar patrones comunes de **ingeniería social**, como **phishing**, **manipulación emocional** o **solicitudes sospechosas**.
 
 > 🧠 Todo el procesamiento ocurre **localmente** en el navegador, garantizando **confidencialidad, integridad y disponibilidad (CID)**.
 
@@ -25,6 +25,37 @@ Crear una herramienta **educativa y preventiva** que utilice IA para ayudar a lo
 * 📊 **Resultados Detallados**: Nivel de riesgo, puntuaciones y explicación del análisis.
 * 🧠 **TensorFlow\.js**: Inferencia de IA directamente en el cliente.
 * 💡 **Interruptor de Simulación**: Activa o desactiva el comportamiento de la extensión.
+* 🛡️ **ML Best Practices**: Protección contra data leakage, drift detection y validaciones robustas.
+
+---
+
+## 🔬 Mejoras de Machine Learning v2.0
+
+### 🎓 **Validaciones Anti-Leakage Implementadas**
+
+Este proyecto implementa **4 capas de protección** contra problemas comunes en ML:
+
+#### 1️⃣ **Data Leakage Prevention**
+- ✅ Scaler entrenado **SOLO** con datos de training
+- ✅ Sin overlap entre conjuntos Train/Val/Test
+- ✅ Análisis de correlaciones para detectar features "mágicas"
+
+#### 2️⃣ **Test Contamination Prevention**
+- ✅ División en 3 conjuntos (70% Train / 15% Validation / 15% Test)
+- ✅ Test set **NUNCA** usado para ajustar hiperparámetros
+- ✅ Estratificación correcta del target
+
+#### 3️⃣ **Data/Concept Drift Detection**
+- ✅ Test de Kolmogorov-Smirnov entre Train y Test
+- ✅ Baseline statistics guardadas para monitoreo en producción
+- ✅ Sistema de alertas para re-entrenamiento
+
+#### 4️⃣ **Hidden Feature Leakage Detection**
+- ✅ Análisis de correlación feature→target
+- ✅ Validación de varianza de features
+- ✅ Feature importance sanity checks
+
+📚 **[Leer documentación completa](ML_BEST_PRACTICES.md)**
 
 ---
 
@@ -34,7 +65,7 @@ Crear una herramienta **educativa y preventiva** que utilice IA para ayudar a lo
 | ------------------------------- | -------------------------- | ------------------------- |
 | JavaScript, HTML, CSS           | Python (Keras, TensorFlow) | TailwindCSS, Google Colab |
 | TensorFlow\.js                  | scikit-learn               | VSCode                    |
-| spaCy / Transformers (opcional) | numpy                      | GitHub                    |
+| spaCy / Transformers (opcional) | numpy, scipy               | GitHub                    |
 
 ---
 
@@ -47,6 +78,7 @@ flowchart LR
     C[Modelo IA en TensorFlow.js]
     D[Evaluación de Riesgo]
     E[Alerta Visual]
+
 
     A --> B --> C --> D --> E
 ```

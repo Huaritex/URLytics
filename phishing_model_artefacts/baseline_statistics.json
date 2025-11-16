@@ -1,0 +1,74 @@
+{
+    "metadata": {
+        "created_date": "2025-11-15",
+        "n_samples_train": 65356,
+        "n_features": 6,
+        "model_version": "2.0"
+    },
+    "feature_statistics": {
+        "Abnormal_URL": {
+            "mean": 0.043484913397392744,
+            "std": 0.2516996276612904,
+            "min": -1.0,
+            "max": 1.0,
+            "median": 0.0,
+            "q25": 0.0,
+            "q75": 0.0
+        },
+        "Prefix_Suffix": {
+            "mean": -0.03503886406756839,
+            "std": 0.2530136921408815,
+            "min": -1.0,
+            "max": 1.0,
+            "median": 0.0,
+            "q25": 0.0,
+            "q75": 0.0
+        },
+        "SSLfinal_State": {
+            "mean": 0.05393536936165004,
+            "std": 0.2492089181594788,
+            "min": -1.0,
+            "max": 1.0,
+            "median": 0.0,
+            "q25": 0.0,
+            "q75": 0.0
+        },
+        "Shortining_Service": {
+            "mean": 0.04553522247383561,
+            "std": 0.2513367879550076,
+            "min": -1.0,
+            "max": 1.0,
+            "median": 0.0,
+            "q25": 0.0,
+            "q75": 0.0
+        },
+        "having_At_Symbol": {
+            "mean": 0.04792214945835119,
+            "std": 0.2508926097821101,
+            "min": -1.0,
+            "max": 1.0,
+            "median": 0.0,
+            "q25": 0.0,
+            "q75": 0.0
+        },
+        "having_Sub_Domain": {
+            "mean": 0.01885060285207173,
+            "std": 0.22391540397410573,
+            "min": -1.0,
+            "max": 1.0,
+            "median": 0.0,
+            "q25": 0.0,
+            "q75": 0.0
+        }
+    },
+    "target_distribution": {
+        "phishing_rate": 0.39258828569679904,
+        "phishing_count": 25658,
+        "legitimate_count": 39698
+    },
+    "performance_baseline": {
+        "test_accuracy": null,
+        "test_f1": null,
+        "test_roc_auc": null
+    }
+}

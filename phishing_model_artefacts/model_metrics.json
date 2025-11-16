@@ -1,0 +1,39 @@
+{
+    "training_info": {
+        "training_samples": 65356,
+        "validation_samples": 14005,
+        "test_samples": 14005,
+        "features": [
+            "Abnormal_URL",
+            "Prefix_Suffix",
+            "SSLfinal_State",
+            "Shortining_Service",
+            "having_At_Symbol",
+            "having_Sub_Domain"
+        ],
+        "n_estimators": 100,
+        "training_time_seconds": 0.2835249900817871
+    },
+    "validation_metrics": {
+        "accuracy": 0.6739735808639772,
+        "precision": 1.0,
+        "recall": 0.16951618770461988,
+        "f1_score": 0.28989113530326593,
+        "roc_auc": 0.5847580938523099
+    },
+    "test_metrics": {
+        "accuracy": 0.6760442699036059,
+        "precision": 1.0,
+        "recall": 0.1747908330301928,
+        "f1_score": 0.29756928317076947,
+        "roc_auc": 0.5873954165150964
+    },
+    "feature_importance": {
+        "Abnormal_URL": 0.19839065631167593,
+        "Prefix_Suffix": 0.04453738125023467,
+        "SSLfinal_State": 0.2818888108551643,
+        "Shortining_Service": 0.2105506730980661,
+        "having_At_Symbol": 0.264559129601602,
+        "having_Sub_Domain": 7.33488832568584e-05
+    }
+}

@@ -1,0 +1,88 @@
+# =====================================================
+# SocialGuard - GitIgnore Configuration
+# =====================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual Environment ---
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Jupyter Notebook ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# --- Logs ---
+*.log
+api.log
+nohup.out
+
+# --- PID Files ---
+*.pid
+.api.pid
+
+# --- Kaggle Credentials (IMPORTANTE: NO SUBIR CREDENCIALES) ---
+kaggle.json
+
+# --- Temporary Files ---
+*.tmp
+*.bak
+*.backup
+*.cache
+
+# --- Large Model Files (OPCIONAL: Descomentar si no quieres subir modelos grandes) ---
+# phishing_model_artefacts/*.joblib
+# social engineer/model/*.joblib
+# social engineer/model/*.h5
+
+# --- Large CSV Files (OPCIONAL: Descomentar si los datasets son muy grandes) ---
+# *.csv
+# social engineer/model/RT_IOT2022.csv
+# social engineer/model/custom_data.csv
+
+# --- Environment Variables ---
+.env
+.env.local
+
+# --- Testing Cache ---
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- OS Generated ---
+Thumbs.db
+.DS_Store

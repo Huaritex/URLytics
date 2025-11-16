@@ -1,0 +1,47 @@
+# =====================================================
+# SocialGuard ML v2.0 - Requirements
+# =====================================================
+# Librerías necesarias para el proyecto completo
+# =====================================================
+
+# --- Core ML Libraries ---
+scikit-learn>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.11.0
+
+# --- Model Persistence ---
+joblib>=1.3.0
+
+# --- Data Acquisition ---
+kagglehub>=0.2.0
+
+# --- Visualization ---
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# --- API / Web Framework ---
+flask>=2.3.0
+flask-cors>=4.0.0
+requests>=2.31.0
+colorama>=0.4.6
+
+# --- Jupyter Notebook Support ---
+jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.25.0
+
+# --- Optional: Advanced Monitoring ---
+# evidently>=0.4.0        # Para drift monitoring avanzado
+# great-expectations>=0.17.0  # Para validación de datos
+# mlflow>=2.7.0          # Para tracking de experimentos
+
+# --- Development Tools ---
+pytest>=7.4.0           # Para testing
+black>=23.7.0           # Para formateo de código
+flake8>=6.1.0           # Para linting
+
+# =====================================================
+# INSTALACIÓN:
+# pip install -r requirements.txt
+# =====================================================
