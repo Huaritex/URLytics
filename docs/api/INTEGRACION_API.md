@@ -234,6 +234,157 @@ checkPhishing('https://secure-paypal@malicious.com');
 
 ---
 
+## ⚛️ Integración con React (URLytics Web)
+
+### Configuración del Cliente React
+
+El frontend React de URLytics (`urlytics-web/`) se integra con la API Flask mediante `fetch`:
+
+```javascript
+// src/App.jsx
+const analyzeText = async () => {
+  if (!isActive) {
+    showAlert('URLytics está desactivado. Actívalo para analizar mensajes.', 'info')
+    return
+  }
+
+  if (!textToAnalyze.trim()) {
+    showAlert('Por favor, ingresa texto para analizar.', 'warning')
+    return
+  }
+
+  try {
+    const response = await fetch('http://localhost:5000/predict', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text: textToAnalyze })
+    })
+
+    if (!response.ok) throw new Error('Error en la API')
+
+    const result = await response.json()
+    const isPhishing = result.prediction === 1 && result.confidence >= 0.25
+
+    setAnalysisResult({
+      isSuspicious: isPhishing,
+      type: isPhishing ? 'Phishing' : 'No Phishing',
+      message: isPhishing ? '¡Alerta! Posible phishing.' : 'Parece seguro.',
+      details: `Confianza: ${(result.confidence * 100).toFixed(2)}%`,
+      score: result.confidence
+    })
+  } catch (error) {
+    showAlert('No se pudo conectar con el backend de IA.', 'error')
+  }
+}
+```
+
+### Estados de la Aplicación React
+
+```javascript
+const [isDarkMode, setIsDarkMode] = useState(false)      // Tema oscuro/claro
+const [isActive, setIsActive] = useState(true)           // URLytics activo/inactivo
+const [textToAnalyze, setTextToAnalyze] = useState('')   // Texto del usuario
+const [analysisResult, setAnalysisResult] = useState(null) // Resultado del análisis
+const [alert, setAlert] = useState(null)                 // Alertas/notificaciones
+```
+
+### Renderizado de Resultados
+
+```javascript
+{analysisResult && (
+  <div className="mt-6 p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+    <h3 className="text-md font-semibold text-gray-700 dark:text-gray-300 mb-2">
+      Resultado del Análisis:
+    </h3>
+    <p className={`text-sm mb-1 font-semibold ${
+      analysisResult.isSuspicious 
+        ? 'text-red-600 dark:text-red-400' 
+        : 'text-green-600 dark:text-green-400'
+    }`}>
+      Nivel de Riesgo: {analysisResult.isSuspicious ? 'Alto' : 'Bajo'} 
+      (Score: {analysisResult.score.toFixed(2)})
+    </p>
+    <p className="text-sm text-gray-600 dark:text-gray-400">
+      Detalles: {analysisResult.details}
+    </p>
+  </div>
+)}
+```
+
+### Configuración de CORS (Backend)
+
+Para que React en desarrollo pueda comunicarse con la API Flask, asegúrate de tener CORS habilitado:
+
+```python
+# api.py
+from flask import Flask
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app)  # Permitir requests desde cualquier origen
+```
+
+### Flujo Completo React → API
+
+```
+┌─────────────────┐
+│  Usuario ingresa│
+│  texto en React │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│ Frontend valida │
+│ (estado activo, │
+│  texto no vacío)│
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│   POST /predict │
+│ body: {text: ...}│
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  API Flask proc.│
+│  extrae features│
+│  predice con RF │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│ Response JSON   │
+│ {prediction: 1, │
+│  confidence: ..}│
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│ React muestra   │
+│ resultado con   │
+│ colores/estilos │
+└─────────────────┘
+```
+
+### Ejecutar Frontend + Backend
+
+```bash
+# Terminal 1: Iniciar API Flask
+cd "/home/huaritex/Desktop/social engineer"
+python api.py
+
+# Terminal 2: Iniciar React
+cd "/home/huaritex/Desktop/social engineer/urlytics-web"
+npm run dev
+```
+
+Navega a `http://localhost:5173` y la aplicación React se conectará automáticamente a `http://localhost:5000`.
+
+**📚 Documentación completa del frontend:** [FRONTEND_REACT.md](../frontend/FRONTEND_REACT.md)
+
+---
+
 ## 📈 Métricas del Modelo Actual
 
 - **Accuracy**: 67.60% - Predicciones correctas

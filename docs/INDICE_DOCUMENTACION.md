@@ -3,19 +3,25 @@
 ## 🎯 Por Dónde Empezar
 
 ### 🚀 Si quieres empezar RÁPIDO:
-👉 **[INICIO_RAPIDO.md](INICIO_RAPIDO.md)** (5 minutos)
+👉 **[INICIO_RAPIDO.md](guides/INICIO_RAPIDO.md)** (5 minutos)
 - Guía paso a paso para ejecutar el modelo
 - Comandos esenciales
 - Troubleshooting básico
 
-### 📖 Si quieres ENTENDER las mejoras:
-👉 **[RESUMEN_EJECUTIVO.md](RESUMEN_EJECUTIVO.md)** (10 minutos)
+### 🎨 Si quieres usar el FRONTEND:
+� **[FRONTEND_REACT.md](frontend/FRONTEND_REACT.md)** (20 minutos)
+- Aplicación React con background 3D interactivo
+- Sistema de theming dark/light
+- Integración con API de predicción
+
+### �📖 Si quieres ENTENDER las mejoras:
+👉 **[RESUMEN_EJECUTIVO.md](ml/RESUMEN_EJECUTIVO.md)** (10 minutos)
 - Qué problemas se resolvieron
 - Por qué son importantes
 - Impacto de las mejoras
 
 ### 🔬 Si quieres PROFUNDIZAR:
-👉 **[ML_BEST_PRACTICES.md](ML_BEST_PRACTICES.md)** (30 minutos)
+👉 **[ML_BEST_PRACTICES.md](ml/ML_BEST_PRACTICES.md)** (30 minutos)
 - Guía completa de mejores prácticas
 - Ejemplos de código detallados
 - Referencias y recursos
@@ -36,6 +42,13 @@
 | **[MEJORAS_ML_V2.md](MEJORAS_ML_V2.md)** | Resumen técnico detallado | ML Engineers | 15 min |
 | **[PIPELINE_DIAGRAMS.md](PIPELINE_DIAGRAMS.md)** | Diagramas visuales del flujo | Visual learners | 15 min |
 | **[CHECKLIST_VALIDACION.md](CHECKLIST_VALIDACION.md)** | Checklist paso a paso | Desarrolladores | Ref. |
+
+### 🎨 Frontend y API
+
+| Documento | Descripción | Audiencia | Tiempo |
+|-----------|-------------|-----------|--------|
+| **[FRONTEND_REACT.md](frontend/FRONTEND_REACT.md)** | 🆕 Frontend React con background 3D | Frontend Dev | 20 min |
+| **[INTEGRACION_API.md](api/INTEGRACION_API.md)** | Integración de API Flask | Backend Dev | 15 min |
 
 ### 📓 Notebooks y Código
 
