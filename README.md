@@ -447,15 +447,19 @@ python test_api.py
 
 ## 📚 Documentación
 
-| Documento | Descripción |
-|-----------|-------------|
-| [INICIO_RAPIDO.md](INICIO_RAPIDO.md) | Guía de inicio en 5 minutos |
-| [INSTALACION.md](INSTALACION.md) | Instalación paso a paso completa |
-| [INTEGRACION_API.md](INTEGRACION_API.md) | Documentación de API REST |
-| [ML_BEST_PRACTICES.md](ML_BEST_PRACTICES.md) | Mejores prácticas de ML |
-| [ORDEN_EJECUCION_NOTEBOOK.md](ORDEN_EJECUCION_NOTEBOOK.md) | Guía del notebook de training |
-| [PIPELINE_DIAGRAMS.md](PIPELINE_DIAGRAMS.md) | Diagramas del pipeline ML |
-| [INDICE_DOCUMENTACION.md](INDICE_DOCUMENTACION.md) | Índice completo de docs |
+### 📂 **Documentación Completa en `/docs`**
+
+Toda la documentación está organizada en la carpeta [`/docs`](docs/):
+
+| Categoría | Documentos |
+|-----------|------------|
+| 🚀 **Guías** | [Inicio Rápido](docs/guides/INICIO_RAPIDO.md) |
+| ⚙️ **Setup** | [Instalación](docs/setup/INSTALACION.md) • [Configuración](docs/setup/INSTALACION_COMPLETADA.md) |
+| 🧠 **Machine Learning** | [Best Practices](docs/ml/ML_BEST_PRACTICES.md) • [Pipeline](docs/ml/PIPELINE_DIAGRAMS.md) • [Validaciones](docs/ml/CHECKLIST_VALIDACION.md) |
+| 🌐 **API** | [Integración API](docs/api/INTEGRACION_API.md) |
+| 📋 **Índice** | [Ver todos los documentos](docs/README.md) |
+
+**👉 [Ir a la documentación completa](docs/README.md)**
 
 ---
 
